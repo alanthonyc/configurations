@@ -11,15 +11,15 @@ Serves the current directory via HTTP on the specified port"
         return 0
     fi
 
-    local port_pattern="^[0-9]+$"
-    if ! [[ $1 =~ $port_pattern ]]; then
-        echo "Invalid port argument: \"$1\""
-        return 1
-    fi
-
     local Port=$1
     if [ -z "$Port" ]; then
         Port=9999;
+    fi
+
+    local port_pattern="^[0-9]+$"
+    if ! [[ $Port =~ $port_pattern ]]; then
+        echo "Invalid port argument: \"$1\""
+        return 1
     fi
 
     python -m SimpleHTTPServer $Port

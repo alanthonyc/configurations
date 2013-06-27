@@ -21,3 +21,5 @@ alias mkdir='mkdir -pv'
 alias grep="grep --color"
 
 alias serve='python -m SimpleHTTPServer 9999'
+
+alias pull="git pull --rebase"

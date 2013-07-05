@@ -10,3 +10,4 @@
 
 [core]
 	excludesfile = /Users/leon/.gitignore
+	trustctime = false

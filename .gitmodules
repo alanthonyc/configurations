@@ -34,3 +34,6 @@
 [submodule "vim/bundle/vim-jinja"]
 	path = vim/bundle/vim-jinja
 	url = git://github.com/lepture/vim-jinja.git
+[submodule "vim/bundle/tabular"]
+	path = vim/bundle/tabular
+	url = https://github.com/godlygeek/tabular

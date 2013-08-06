@@ -144,16 +144,11 @@ autocmd VimEnter * if !argc() | NERDTree | endif "show NERDTree when no args are
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Keybindings / Commands
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-command Fb FufBuffer
-command Ff FufFile
-command Fc FufCoverageFile
-command Fl FufLine
-
 command CsvAlign Tabularize /;/r1
 
 let mapleader = ","
-noremap <Leader>f :FufFile <Enter>
-noremap <Leader>b :FufBuffer <Enter>
+noremap <Leader>f :CtrlP <Enter>
+noremap <Leader>b :CtrlPBuffer <Enter>
 noremap <Leader>n :NERDTreeToggle <Enter>
 noremap <Leader>h :nohl <Enter>
 nnoremap <leader>stw :%s/\s\+$//<cr>:let @/=''<CR> " strip all trailing whitespace in the current file

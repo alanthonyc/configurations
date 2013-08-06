@@ -18,10 +18,13 @@ let g:NERDTreeWinSize = 60
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Swap and Backup related
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" prevent vim from creating swap and backup files
-set nobackup
-set nowb
-set noswapfile
+set backup                  " create backups
+set undofile                " undo feature (even between exits)
+set writebackup             " write backup files
+set swapfile                " create .swp files
+set backupdir=~/.vim/backup
+set directory=~/.vim/swap
+set undodir=~/.vim/undo
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Text, ab and indent related
@@ -156,3 +159,5 @@ noremap <Leader>u :GundoToggle <Enter>
 
 vmap < <gv
 vmap > >gv
+
+inoremap <c-space> <c-x><c-o> " code completion

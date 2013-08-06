@@ -149,7 +149,7 @@ command Ff FufFile
 command Fc FufCoverageFile
 command Fl FufLine
 
-command CsvAlign Tabularize /,/r1
+command CsvAlign Tabularize /;/r1
 
 let mapleader = ","
 noremap <Leader>f :FufFile <Enter>

@@ -136,7 +136,8 @@ autocmd FileType yaml
   \ setlocal tabstop=2 |
   \ setlocal softtabstop=2
 
-autocmd FileType makefile
+autocmd FileType make
+  \ setlocal tabstop=4 |
   \ setlocal noexpandtab
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""

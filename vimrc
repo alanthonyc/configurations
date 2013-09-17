@@ -102,6 +102,13 @@ set incsearch   "enable incremental search (search while typing)
 set smartcase   "preserve case when replacing
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Folding related
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+set foldmethod=indent
+set foldcolumn=3
+set foldlevelstart=20
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => File related
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 filetype on     "show filetype
@@ -116,8 +123,8 @@ autocmd FileType vim
   \ setlocal tabstop=2
 
 autocmd FileType markdown
-  \ setlocal shiftwidth=2 |
-  \ setlocal tabstop=2 |
+  \ setlocal shiftwidth=4 |
+  \ setlocal tabstop=4 |
   \ setlocal colorcolumn= "No line limits in markdown
 
 autocmd FileType jade
@@ -157,6 +164,9 @@ noremap <Leader>n :NERDTreeToggle <Enter>
 noremap <Leader>h :nohl <Enter>
 nnoremap <leader>stw :%s/\s\+$//<cr>:let @/=''<CR> " strip all trailing whitespace in the current file
 noremap <Leader>u :GundoToggle <Enter>
+noremap <Leader>z1 :setlocal foldlevel=1 <Enter>
+noremap <Leader>z2 :setlocal foldlevel=2 <Enter>
+noremap <Leader>zz :setlocal foldlevel=20 <Enter>
 
 vmap < <gv
 vmap > >gv

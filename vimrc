@@ -166,7 +166,6 @@ nnoremap <leader>stw :%s/\s\+$//<cr>:let @/=''<CR> " strip all trailing whitespa
 noremap <Leader>u :GundoToggle <Enter>
 noremap <Leader>z1 :setlocal foldlevel=1 <Enter>
 noremap <Leader>z2 :setlocal foldlevel=2 <Enter>
-noremap <Leader>zz :setlocal foldlevel=20 <Enter>
 
 vmap < <gv
 vmap > >gv

@@ -105,7 +105,7 @@ set smartcase   "preserve case when replacing
 " => Folding related
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 set foldmethod=indent
-set foldcolumn=3
+set foldcolumn=5
 set foldlevelstart=20
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""

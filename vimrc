@@ -117,6 +117,8 @@ filetype indent on
 set hidden      "allow switching buffers without saving files, keeps unsaved changes for later
 
 au BufNewFile,BufRead *.md set filetype=markdown "use md files as markdown
+au BufNewFile,BufRead *.jinja set filetype=jinja "use jinja files as Jinja2
+au BufNewFile,BufRead *.twig set filetype=jinja "use twig files as Jinja2
 
 autocmd FileType vim
   \ setlocal shiftwidth=2 |

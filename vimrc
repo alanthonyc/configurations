@@ -1,5 +1,5 @@
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => Plugins
+" => Loading Plugins
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 execute pathogen#infect()
 
@@ -13,7 +13,6 @@ set modeline     " enable vim modelines usage
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Window/Tab related                                       "
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-let g:NERDTreeWinSize = 60
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Swap and Backup related
@@ -155,21 +154,69 @@ autocmd FileType make
 autocmd VimEnter * if !argc() | NERDTree | endif "show NERDTree when no args are given
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => Keybindings / Commands
+" => NERDTree Settings
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+let g:NERDTreeWinSize = 60
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Ctrl-P Settings
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+let g:ctrlp_clear_cache_on_exit = 0 " do not clear cache on exit
+let g:ctrlp_reuse_window = 'netrw\|help\|quickfix'
+let g:ctrlp_show_hidden = 1     " scan for dotfiles and dotdirs
+let g:ctrlp_max_files = 50000   " maximum number of files to scan (0 = no limit)
+let g:ctrlp_max_depth = 40      " maximum depth of dirtree to recurse into
+let g:ctrlp_max_history = 100   " set to '&history' to use vim's history option
+let g:ctrlp_follow_symlinks = 0 " do not follow symlinks
+let g:ctrlp_lazy_update = 1     " update match-window after a certain time (1=250ms, >1 is interpreted as delay time in milliseconds)
+let g:ctrlp_mruf_max = 250      " number of files to remember for MRU mode (most-recently-used)
+" let g:ctrlp_custom_ignore = '\v\/(build|cache|modules-built)\/'
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Syntastic Settings
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+let g:syntastic_javascript_checkers = ['jshint']
+
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Commands
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 command CsvAlign Tabularize /;/r1
 
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Keybindings
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 let mapleader = ","
-noremap <Leader>f :CtrlP <Enter>
-noremap <Leader>b :CtrlPBuffer <Enter>
+
+" Nerdtree
+"   n     toggle NERDTree
+"   lf    lookup current file in NERDTree
 noremap <Leader>n :NERDTreeToggle <Enter>
-noremap <Leader>h :nohl <Enter>
-nnoremap <leader>stw :%s/\s\+$//<cr>:let @/=''<CR> " strip all trailing whitespace in the current file
-noremap <Leader>u :GundoToggle <Enter>
+noremap <Leader>lf :NERDTreeFind <Enter>
+
+" Ctrl-P
+"   b     search buffers
+"   f     search files and buffers
+"   go    search for word under cursor or visual selection
+noremap <Leader>b :CtrlPBuffer <Enter>
+noremap <Leader>f :CtrlPMixed <Enter>
+nmap <Leader>go :CtrlPMixed<cr><c-\>w
+vmap <Leader>go :<c-u>CtrlPMixed<cr><c-\>v
+
+" folding
+"   z1    set folding level to 1
+"   z2    set folding level to 2
+"   za    toggle a fold (vim default)
 noremap <Leader>z1 :setlocal foldlevel=1 <Enter>
 noremap <Leader>z2 :setlocal foldlevel=2 <Enter>
 
+" Misc
+"   h     remove search highlight
+"   stw   remove trailing whitespace
+"   u     open undo history browser
+noremap <Leader>h :nohl <Enter>
+nnoremap <leader>stw :%s/\s\+$//<cr>:let @/=''<CR> " strip all trailing whitespace in the current file
+noremap <Leader>u :GundoToggle <Enter>
 vmap < <gv
 vmap > >gv
-
-inoremap <c-space> <c-x><c-o> " code completion

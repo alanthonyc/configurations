@@ -20,3 +20,6 @@ alias mkdir='mkdir -pv'
 alias grep="grep --color"
 
 alias pull="git pull --rebase"
+
+# replace Mac OSX "BSD-style" sleep with GNU sleep (installed from homebrew)
+alias sleep="gsleep"

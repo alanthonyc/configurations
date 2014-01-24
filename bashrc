@@ -14,6 +14,6 @@ LIB_DIR="$DIR/lib"
 INCLUDE_DIR="$DIR/bash_includes"
 for f in $INCLUDE_DIR/*.sh; do source $f; done
 
-if [ -f "~/.bashrc.local" ]; then
-   source "~/.bashrc.local"
+if [ -f "$HOME/.bashrc.local" ]; then
+   source "$HOME/.bashrc.local"
 fi

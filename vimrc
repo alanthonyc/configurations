@@ -68,6 +68,8 @@ highlight ColorColumn ctermbg=123 guibg=gray10 "colors for the colorcolumns
 set showcmd                 " show command characters
 set showmode                " show the current (paste) mode on the open buffer
 
+set ttyfast                 " may improve scrolling performance
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Statusbar
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""

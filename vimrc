@@ -220,3 +220,5 @@ nnoremap <leader>stw :%s/\s\+$//<cr>:let @/=''<CR> " strip all trailing whitespa
 noremap <Leader>u :GundoToggle <Enter>
 vmap < <gv
 vmap > >gv
+
+set mouse=a

@@ -2,7 +2,7 @@
 	email = leon.weidauer@googlemail.com
 	name = Leon Weidauer
 [push]
-	default = matching
+	default = current
 [color]
     branch = auto
     diff = auto

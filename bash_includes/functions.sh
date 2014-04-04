@@ -42,3 +42,12 @@ function remind {
         echo "Usage: remind 15m 'you gotta leave!'"
     fi
 }
+
+# usage: clone lnwdr/configurations     #clones the github repo via SSH
+function clone {
+    if [ ! -z "$1" ]; then
+        git clone "git@github.com:$1.git"
+    else
+        echo "Usage: clone lnwdr/configurations"
+    fi
+}

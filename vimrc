@@ -223,4 +223,6 @@ noremap <Leader>u :GundoToggle <Enter>
 vmap < <gv
 vmap > >gv
 
+set backspace=indent,eol,start    " make backspace behave normally
+
 set mouse=a

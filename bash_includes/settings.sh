@@ -2,4 +2,4 @@
 # SETTINGS #
 ############
 
-set -o vi
+#set -o vi # not sure about this ...

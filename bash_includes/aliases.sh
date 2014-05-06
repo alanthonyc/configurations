@@ -1,6 +1,7 @@
 ###########
 # Aliases #
 ###########
+alias l="ls -1"
 alias ll="ls -lG"
 alias la="ls -laG"
 

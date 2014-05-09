@@ -185,7 +185,6 @@ let g:syntastic_javascript_checkers = ['jshint']
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 command CsvAlign Tabularize /;/r1
 
-
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Keybindings
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -203,8 +202,8 @@ noremap <Leader>lf :NERDTreeFind <Enter>
 "   go    search for word under cursor or visual selection
 noremap <Leader>b :CtrlPBuffer <Enter>
 noremap <Leader>f :CtrlPMixed <Enter>
-nmap <Leader>go :CtrlPMixed<cr><c-\>w
-vmap <Leader>go :<c-u>CtrlPMixed<cr><c-\>v
+noremap <Leader>go :CtrlPMixed<cr><c-\>w
+vnoremap <Leader>go :<c-u>CtrlPMixed<cr><c-\>v
 
 " folding
 "   z1    set folding level to 1
@@ -212,6 +211,7 @@ vmap <Leader>go :<c-u>CtrlPMixed<cr><c-\>v
 "   za    toggle a fold (vim default)
 noremap <Leader>z1 :setlocal foldlevel=1 <Enter>
 noremap <Leader>z2 :setlocal foldlevel=2 <Enter>
+
 
 " Misc
 "   h     remove search highlight

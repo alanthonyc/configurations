@@ -40,14 +40,13 @@ set textwidth=120
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Color/display related
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-set background=dark "what it say, duh!
-color solarized     "choose color scheme
+" set background=dark "what it says, duh!
+color slate     "choose color scheme
 set hls!            "highlight search hits
 syntax enable       "enable syntax highlighting
 set showmatch       "show matching braces/brackets/parens
 " set number        "display line numbers
 set relativenumber
-set cul             "highlight current line
 set lbr             "break long lines at word boundaries
 set laststatus=2    "always show the status bar even if there's only one window
 
@@ -63,7 +62,8 @@ set listchars+=trail:⋅      " set trailing whitespace character
 set showbreak=↪             " the character to put to show a line has been wrapped
 
 set colorcolumn=80
-highlight ColorColumn ctermbg=123 guibg=gray10 "colors for the colorcolumns
+"highlight ColorColumn ctermbg=123 guibg=gray10 "colors for the colorcolumns
+
 
 set showcmd                 " show command characters
 set showmode                " show the current (paste) mode on the open buffer
@@ -108,6 +108,7 @@ set smartcase   "preserve case when replacing
 set foldmethod=indent
 set foldcolumn=5
 set foldlevelstart=20
+highlight FoldColumn ctermbg=Black ctermfg=Cyan
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => File related

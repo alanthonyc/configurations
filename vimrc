@@ -108,6 +108,8 @@ set smartcase   "preserve case when replacing
 set foldmethod=indent
 set foldcolumn=5
 set foldlevelstart=20
+
+" fix the ugly bright foldcolumns of the slate color scheme
 highlight FoldColumn ctermbg=Black ctermfg=Cyan
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""

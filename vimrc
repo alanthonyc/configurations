@@ -140,6 +140,12 @@ autocmd FileType ruby
   \ setlocal tabstop=2 |
   \ setlocal softtabstop=2
 
+autocmd FileType coffee
+  \ setlocal expandtab |
+  \ setlocal shiftwidth=2 |
+  \ setlocal tabstop=2 |
+  \ setlocal softtabstop=2
+
 autocmd FileType yaml
   \ setlocal expandtab |
   \ setlocal shiftwidth=2 |

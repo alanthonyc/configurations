@@ -64,6 +64,12 @@ set showbreak=↪             " the character to put to show a line has been wra
 set colorcolumn=80
 "highlight ColorColumn ctermbg=123 guibg=gray10 "colors for the colorcolumns
 
+" fix the ugly bright foldcolumns of the slate color scheme
+highlight FoldColumn ctermbg=Black ctermfg=Cyan
+
+" fix the Pmenu colors to be more readable
+highlight Pmenu ctermfg=LightGray ctermbg=DarkGray
+highlight PmenuSel ctermfg=Black ctermbg=magenta
 
 set showcmd                 " show command characters
 set showmode                " show the current (paste) mode on the open buffer
@@ -108,9 +114,6 @@ set smartcase   "preserve case when replacing
 set foldmethod=indent
 set foldcolumn=5
 set foldlevelstart=20
-
-" fix the ugly bright foldcolumns of the slate color scheme
-highlight FoldColumn ctermbg=Black ctermfg=Cyan
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => File related

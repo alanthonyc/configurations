@@ -37,3 +37,5 @@ alias very="git"
     # such commit
     # very push
 
+alias home="cd $HOME"
+alias h="home"

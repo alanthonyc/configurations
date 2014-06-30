@@ -51,3 +51,11 @@ function clone {
         echo "Usage: clone lnwdr/configurations"
     fi
 }
+
+# prints a JSON document listing all collaborator of a github project to STDOUT
+# additional text is printed to STDERR to keep output suitable for piping
+# usage: `collaborators foo bar` for project github.com/foo/bar
+function collaborators {
+    echo "Github collaborators for $1/$2:" 1>&2
+    curl -X GET https://api.github.com/repos/$1/$2/collaborators
+}

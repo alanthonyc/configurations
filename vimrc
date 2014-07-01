@@ -223,6 +223,7 @@ vnoremap <Leader>go :<c-u>CtrlPMixed<cr><c-\>v
 "   za    toggle a fold (vim default)
 noremap <Leader>z1 :setlocal foldlevel=1 <Enter>
 noremap <Leader>z2 :setlocal foldlevel=2 <Enter>
+noremap <Leader>z0 :setlocal foldlevel=1000 <Enter> " open all folds
 
 
 " Misc

@@ -41,17 +41,17 @@ set textwidth=120
 " => Color/display related
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " set background=dark "what it says, duh!
-color slate     "choose color scheme
+color desert     "choose color scheme
+let &t_Co=256    "tell vim that the terminal support 256 colors
 set hls!            "highlight search hits
 syntax enable       "enable syntax highlighting
 set showmatch       "show matching braces/brackets/parens
 " set number        "display line numbers
 set relativenumber
-set lbr             "break long lines at word boundaries
 set laststatus=2    "always show the status bar even if there's only one window
 
 set cursorline
-set cursorcolumn
+" set cursorcolumn
 
 set scrolloff=8     " keep more context when scrolling off the end of a buffer
 

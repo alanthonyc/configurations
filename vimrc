@@ -41,7 +41,7 @@ set textwidth=120
 " => Color/display related
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " set background=dark "what it says, duh!
-color desert     "choose color scheme
+color solarized     "choose color scheme
 let &t_Co=256    "tell vim that the terminal support 256 colors
 set hls!            "highlight search hits
 syntax enable       "enable syntax highlighting

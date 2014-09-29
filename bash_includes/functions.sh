@@ -59,3 +59,9 @@ function collaborators {
     echo "Github collaborators for $1/$2:" 1>&2
     curl -X GET https://api.github.com/repos/$1/$2/collaborators
 }
+
+# removes all "dotfiles" from the specified directories recursively
+function rmdotfiles {
+    find $1 -type f -name ".*" -print0 | xargs -0 rm
+}
+

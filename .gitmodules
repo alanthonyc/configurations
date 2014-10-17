@@ -52,3 +52,6 @@
 [submodule "vim/bundle/vim-javascript"]
 	path = vim/bundle/vim-javascript
 	url = git@github.com:pangloss/vim-javascript.git
+[submodule "vim/bundle/smartpairs.vim"]
+	path = vim/bundle/smartpairs.vim
+	url = git@github.com:gorkunov/smartpairs.vim.git

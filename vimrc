@@ -36,6 +36,7 @@ set smarttab      "enable smart indetation
 set autoindent    "enable auto indentation
 
 set textwidth=120
+set breakindent
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Color/display related

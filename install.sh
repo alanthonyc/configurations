@@ -1,4 +1,4 @@
-DIR=$(pwd)
+OLD_PWD=$(pwd)
 
 echo "Updating submodules ..."
 git submodule update --init --recursive

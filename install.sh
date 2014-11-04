@@ -1,4 +1,4 @@
-OLD_PWD=$(pwd)
+DIR=$(pwd)
 
 echo "Updating submodules ..."
 git submodule update --init --recursive
@@ -24,4 +24,4 @@ for L in $LINKS; do
     echo
 done
 
-cd $OLD_PWD
+cd $DIR

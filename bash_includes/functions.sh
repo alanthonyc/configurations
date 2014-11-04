@@ -65,3 +65,7 @@ function rmdotfiles {
     find $1 -type f -name ".*" -print0 | xargs -0 rm
 }
 
+# sets the terminals title to the current working diretory
+function set_terminal_title {
+    echo -ne "\033]0;$PWD\007"
+}

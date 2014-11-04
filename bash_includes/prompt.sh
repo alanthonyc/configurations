@@ -46,6 +46,8 @@ function setPrompt() {
     else
         PS1="$PROMPT_START $PROMPT_END"
     fi
+
+    set_terminal_title
 }
 
 PROMPT_COMMAND=setPrompt

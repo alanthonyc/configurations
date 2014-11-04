@@ -9,5 +9,7 @@ Setup
    1. symlink `gitignore_global` file to our `.gitignore_global`
    1. symlink `bash_profile` file to our `.bash_profile` or `.bashrc`
 
+**DO NOT FORGET TO CHANGE THE NAME AND EMAIL IN THE GITCONFIG FILES!**
+
 If you want to install homebrew and pip packages, go into the `setups` directory and run the corresponding script.
 

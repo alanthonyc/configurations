@@ -163,6 +163,12 @@ autocmd FileType make
   \ setlocal tabstop=4 |
   \ setlocal noexpandtab
 
+autocmd FileType haskell
+  \ setlocal expandtab |
+  \ setlocal shiftwidth=2 |
+  \ setlocal tabstop=2 |
+  \ setlocal softtabstop=2
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Startup stuff
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
